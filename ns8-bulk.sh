@@ -15,7 +15,7 @@ REPOS=(
 # invoke script multiple times with different repositories
 for REPO in "${REPOS[@]}"; do
   echo "Processing repository: $REPO"
-  bash ./"$SCRIPT" "$REPO"
+  ./"$SCRIPT" "$REPO"
   # print a newline for better readability
   echo
 done
